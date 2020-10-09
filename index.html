@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <p>Ariel Zuo</p>
+                <img src="./user.png" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <img src="./search.png" class="search-icon">
+            <div class="social-links">
+                <img src="./fb.png" alt="">
+                <img src="./ig.png" alt="">
+                <img src="./pt.png " alt="">
+            </div>
+            <img src="./info.png" class="info-icon">
+
+        </div>
+
+        <div class="msg-container">
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>The Reasoning</h1>
+                    <p>Minim ullamco ad exercitation ipsum ut enim sint. Ex culpa excepteur ad do aute id tempor ad labore. Sint ullamco consectetur occaecat velit commodo ut est magna.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="msg-col">
+                    <h1>The Knowledge</h1>
+                    <p>Minim ullamco ad exercitation ipsum ut enim sint. Ex culpa excepteur ad do aute id tempor ad labore. Sint ullamco consectetur occaecat velit commodo ut est magna.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="msg-col">
+                    <h1>The Intergation</h1>
+                    <p>Minim ullamco ad exercitation ipsum ut enim sint. Ex culpa excepteur ad do aute id tempor ad labore. Sint ullamco consectetur occaecat velit commodo ut est magna.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="msg-col">
+                    <h1>The Learning</h1>
+                    <p>Minim ullamco ad exercitation ipsum ut enim sint. Ex culpa excepteur ad do aute id tempor ad labore. Sint ullamco consectetur occaecat velit commodo ut est magna.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    <div class="controller">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+        <div id="line4"></div>
+        <div id="active"></div>
+    </div>    
+
+
+    </div>
+
+    <script>
+        let slider = document.getElementById("slider");
+        let active = document.getElementById("active")
+
+        let line1 = document.getElementById("line1");
+        let line2 = document.getElementById("line2");
+        let line3 = document.getElementById("line3");
+        let line4 = document.getElementById("line4");
+
+        line1.onclick =()=>{
+            slider.style.transform = "translateX(0)";
+            active.style.top = "0px"
+
+        }
+
+        line2.onclick =()=>{
+            slider.style.transform = "translateX(-25%)";
+            active.style.top = "80px"
+            
+        }
+        line3.onclick =()=>{
+            slider.style.transform = "translateX(-50%)";
+            active.style.top = "160px"
+            
+        }
+        line4.onclick =()=>{
+            slider.style.transform = "translateX(-75%)";
+            active.style.top = "240px"
+            
+        }
+        
+    </script>
+</body>
+</html>
